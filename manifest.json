@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Unsend Recall for Messenger",
+  "description": "Chrome extension that shows you the contents of removed Facebook messages.",
+  "version": "1.0.0",
+  "permissions": [
+    "*://*.facebook.com/*",
+    "*://*.messenger.com/*",
+    "storage"
+  ],
+  "externally_connectable": {
+    "matches": ["*://*.facebook.com/*", "*://*.messenger.com/*"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*", "*://*.messenger.com/*"],
+      "run_at": "document_idle",
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "web_accessible_resources": [
+    "hook.js",
+    "util.js"
+  ],
+  "icons": { "16": "icon-16.png", "128": "icon-128.png" }
+}
