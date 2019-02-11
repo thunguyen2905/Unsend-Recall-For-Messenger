@@ -77,7 +77,7 @@ function getTombstoneContent(message, metadata) {
   }
   
   let threadMeta = Modules.MessengerState.getThreadMetaNow(currentUserId, message.thread_id);
-  let messageAuthorName = threadMeta.custom_nickname ? threadMeta.custom_nickname[currentUserId] : Modules.MessengerParticipants.getNow(messageAuthor).short_name;
+  let messageAuthorName = threadMeta.custom_nickname ? threadMeta.custom_nickname[messageAuthorId] : Modules.MessengerParticipants.getNow(messageAuthor).short_name;
   
   if (threadMeta) {
     return _getOtherAuthorFbt(messageAuthorName, removedMessage);
