@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Unsend Recall for Messenger",
   "description": "Chrome extension that shows you the contents of removed Facebook messages.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "permissions": [
     "*://*.facebook.com/*",
     "*://*.messenger.com/*",
