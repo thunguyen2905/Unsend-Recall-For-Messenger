@@ -1,4 +1,4 @@
-const EXTENSION_ID = "lfdpbdfgkiofcpmpcideafphnnpgcdcb";
+const EXTENSION_ID = "nhhlllajciiopehklclflnjoiocmgima";
 
 // sends a message to the background script to return messages persisted in local storage
 export function getPersistedMessages(callback) {
