@@ -140,7 +140,22 @@ function getRemovedMessage(message) {
     let messageBody = message.body;
     if(message.has_attachment) { // the message has a link
       let attachment = message.attachments[0];
-      let link = attachment.url ? attachment.url : attachment.share.uri;
+      let link = "";
+      if(attachment.share) {
+        link = attachment.share.uri;
+      }
+      if(attachment.thumbnail_url) {
+        link = attachment.thumbnail_url;
+      }
+      if(attachment.preview_url) {
+        link = attachment.preview_url; 
+      }
+      if(attachment.large_preview_url) {
+        link = attachment.large_preview_url;
+      }
+      if(attachment.url) {
+        link = attachment.url;
+      }
       // if the message has a body, return the body and the link, else just the link itself
       return message.body.length > 0 ? `${messageBody} ${link}` : link;
     }
