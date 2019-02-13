@@ -1,7 +1,7 @@
 # Unsend Recall for Messenger
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/2003684/52550677-ef4dc200-2d8d-11e9-826f-e57ef02fc32b.png">
+<img src="https://user-images.githubusercontent.com/2003684/52722229-152ac080-2f60-11e9-8cf3-96fcaced07c8.png">
 </p>
 
 Chrome extension that shows you the contents of removed Facebook messages.
